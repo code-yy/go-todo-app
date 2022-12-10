@@ -14,6 +14,7 @@ import (
 4. パーミッションを0666に設定
 のログを出力することができる
 */
+
 func LoggingSetting(logFile string) {
 	logfile, err := os.OpenFile(logFile, os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
 	if err != nil {
