@@ -1,1 +1,12 @@
 2022/12/10 11:56:47 main.go:17: test
+2022/12/17 11:05:55 users.go:28: sql: converting argument $1 type: unsupported type func() uuid.UUID, a func
+2022/12/17 11:06:13 users.go:28: near "valued": syntax error
+2022/12/17 11:07:35 users.go:27: near "valued": syntax error
+2022/12/17 11:09:06 users.go:27: near "valued": syntax error
+2022/12/17 11:09:16 users.go:27: near "valued": syntax error
+2022/12/17 11:09:43 users.go:27: near "valued": syntax error
+2022/12/17 11:15:29 users.go:27: near "valued": syntax error
+2022/12/17 11:16:00 users.go:27: near "valued": syntax error
+2022/12/17 11:16:17 users.go:27: near "valued": syntax error
+2022/12/17 11:17:29 users.go:27: near "valued": syntax error
+2022/12/17 11:17:55 users.go:33: near "valued": syntax error
