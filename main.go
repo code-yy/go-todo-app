@@ -22,8 +22,8 @@ func main() {
 	/*
 		// 作成する
 		u := &models.User{}
-		u.Name = "tets"
-		u.Email = "test@gmail.com"
+		u.Name = "test2"
+		u.Email = "test2@gmail.com"
 		u.PassWord = "testtest"
 		fmt.Println(u)
 
@@ -54,6 +54,37 @@ func main() {
 		user.CreateTodo("First User")
 	*/
 
-	t, _ := models.GetTodo(1)
-	fmt.Println(t)
+	/*
+		t, _ := models.GetTodo(1)
+		fmt.Println(t)
+	*/
+
+	/*
+		user, _ := models.GetUser(3)
+		user.CreateTodo("Third User")
+	*/
+
+	/*
+		todos, _ := models.GetTodos()
+		for _, v := range todos {
+			fmt.Println(v)
+		}
+	*/
+
+	/*
+		user2, _ := models.GetUser(3)
+		todos, _ := user2.GetTodosByUser()
+		for _, v := range todos {
+			fmt.Println(v)
+		}
+	*/
+
+	/*
+		t, _ := models.GetTodo(1)
+		t.Content = "Update Todo"
+		t.UpdateTodo()
+	*/
+
+	t, _ := models.GetTodo(3)
+	t.DeleteTodo()
 }
