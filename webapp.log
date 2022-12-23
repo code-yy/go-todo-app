@@ -10,3 +10,6 @@
 2022/12/17 11:16:17 users.go:27: near "valued": syntax error
 2022/12/17 11:17:29 users.go:27: near "valued": syntax error
 2022/12/17 11:17:55 users.go:33: near "valued": syntax error
+2022/12/23 09:49:16 todos.go:23: near "value": syntax error
+2022/12/23 09:49:21 todos.go:23: near "value": syntax error
+2022/12/23 09:49:38 todos.go:23: near "value": syntax error
