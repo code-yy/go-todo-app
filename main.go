@@ -2,7 +2,9 @@ package main
 
 import (
 	"fmt"
+	"todo-app/app/controllers"
 	"todo-app/app/models"
+	"todo-app/config"
 )
 
 // go mod init todo-appで、todo-appとしたので、todo-app/configとする
@@ -85,6 +87,12 @@ func main() {
 		t.UpdateTodo()
 	*/
 
-	t, _ := models.GetTodo(3)
-	t.DeleteTodo()
+	/*
+		t, _ := models.GetTodo(3)
+		t.DeleteTodo()
+	*/
+
+	controllers.StartMainServer()
+	fmt.Println(config.Config.Port)
+
 }

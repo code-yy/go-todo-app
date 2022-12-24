@@ -14,3 +14,421 @@
 2022/12/23 09:49:21 todos.go:23: near "value": syntax error
 2022/12/23 09:49:38 todos.go:23: near "value": syntax error
 2022/12/23 23:53:10 todos.go:48: near "from": syntax error
+2022/12/24 11:44:59 server.go:3230: http: panic serving [::1]:51237: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1011903a0, 0x1013f4180})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x1400014d9c8?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x1011e3760, 0x140001a6000}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:121 +0x30
+todo-app/app/controllers.top({0x1011e5888?, 0x140001a6000}, 0x108a5cf3b?)
+	/Users/yy/Desktop/go-todo-app/app/controllers/router_main.go:10 +0x84
+net/http.HandlerFunc.ServeHTTP(0x1400014dad8?, {0x1011e5888?, 0x140001a6000?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011e5888, 0x140001a6000}, 0x1400018e100)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x1400011d5c0?}, {0x1011e5888, 0x140001a6000}, 0x1400018e100)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x14000139400, {0x1011e5ce0, 0x1400011d4d0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:3102 +0x444
+2022/12/24 11:45:00 server.go:3230: http: panic serving [::1]:51239: runtime error: invalid memory address or nil pointer dereference
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1011903a0, 0x1013f4180})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x1400005b9c8?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x1011e3760, 0x140001a60e0}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:121 +0x30
+todo-app/app/controllers.top({0x1011e5888?, 0x140001a60e0}, 0x108a5cf3b?)
+	/Users/yy/Desktop/go-todo-app/app/controllers/router_main.go:10 +0x84
+net/http.HandlerFunc.ServeHTTP(0x1400005bad8?, {0x1011e5888?, 0x140001a60e0?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011e5888, 0x140001a60e0}, 0x1400018e200)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x1400011d7a0?}, {0x1011e5888, 0x140001a60e0}, 0x1400018e200)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140001394a0, {0x1011e5ce0, 0x1400011d4d0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:3102 +0x444
+2022/12/24 11:45:28 server.go:3230: http: panic serving 127.0.0.1:51246: runtime error: invalid memory address or nil pointer dereference
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1011903a0, 0x1013f4180})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x1400005b9c8?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x1011e3760, 0x140001a61c0}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:121 +0x30
+todo-app/app/controllers.top({0x1011e5888?, 0x140001a61c0}, 0x108a5cf3b?)
+	/Users/yy/Desktop/go-todo-app/app/controllers/router_main.go:10 +0x84
+net/http.HandlerFunc.ServeHTTP(0x1400005bad8?, {0x1011e5888?, 0x140001a61c0?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011e5888, 0x140001a61c0}, 0x1400018e300)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x1400011d920?}, {0x1011e5888, 0x140001a61c0}, 0x1400018e300)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x14000139540, {0x1011e5ce0, 0x1400011d4d0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:3102 +0x444
+2022/12/24 11:45:29 server.go:3230: http: panic serving 127.0.0.1:51247: runtime error: invalid memory address or nil pointer dereference
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1011903a0, 0x1013f4180})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x1400005b9c8?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x1011e3760, 0x140001a6380}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:121 +0x30
+todo-app/app/controllers.top({0x1011e5888?, 0x140001a6380}, 0x108a5cf3b?)
+	/Users/yy/Desktop/go-todo-app/app/controllers/router_main.go:10 +0x84
+net/http.HandlerFunc.ServeHTTP(0x1400005bad8?, {0x1011e5888?, 0x140001a6380?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011e5888, 0x140001a6380}, 0x1400018e400)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x1400011daa0?}, {0x1011e5888, 0x140001a6380}, 0x1400018e400)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140001395e0, {0x1011e5ce0, 0x1400011d4d0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:3102 +0x444
+2022/12/24 11:45:30 server.go:3230: http: panic serving 127.0.0.1:51248: runtime error: invalid memory address or nil pointer dereference
+goroutine 28 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1011903a0, 0x1013f4180})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x1400005b9c8?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x1011e3760, 0x140001a6540}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:121 +0x30
+todo-app/app/controllers.top({0x1011e5888?, 0x140001a6540}, 0x108a5cf3b?)
+	/Users/yy/Desktop/go-todo-app/app/controllers/router_main.go:10 +0x84
+net/http.HandlerFunc.ServeHTTP(0x1400005bad8?, {0x1011e5888?, 0x140001a6540?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011e5888, 0x140001a6540}, 0x1400018e500)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x1400011dc20?}, {0x1011e5888, 0x140001a6540}, 0x1400018e500)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x14000139680, {0x1011e5ce0, 0x1400011d4d0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:3102 +0x444
+2022/12/24 11:45:31 server.go:3230: http: panic serving 127.0.0.1:51249: runtime error: invalid memory address or nil pointer dereference
+goroutine 30 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1011903a0, 0x1013f4180})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x1400005b9c8?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x1011e3760, 0x140001a6700}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:121 +0x30
+todo-app/app/controllers.top({0x1011e5888?, 0x140001a6700}, 0x108a5cf3b?)
+	/Users/yy/Desktop/go-todo-app/app/controllers/router_main.go:10 +0x84
+net/http.HandlerFunc.ServeHTTP(0x1400005bad8?, {0x1011e5888?, 0x140001a6700?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011e5888, 0x140001a6700}, 0x1400018e600)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x1400011dda0?}, {0x1011e5888, 0x140001a6700}, 0x1400018e600)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x14000139720, {0x1011e5ce0, 0x1400011d4d0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:3102 +0x444
+2022/12/24 11:45:31 server.go:3230: http: panic serving 127.0.0.1:51250: runtime error: invalid memory address or nil pointer dereference
+goroutine 32 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1011903a0, 0x1013f4180})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x1400005b9c8?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x1011e3760, 0x140001a68c0}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:121 +0x30
+todo-app/app/controllers.top({0x1011e5888?, 0x140001a68c0}, 0x108a5cf3b?)
+	/Users/yy/Desktop/go-todo-app/app/controllers/router_main.go:10 +0x84
+net/http.HandlerFunc.ServeHTTP(0x1400005bad8?, {0x1011e5888?, 0x140001a68c0?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011e5888, 0x140001a68c0}, 0x1400018e700)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x1400011df20?}, {0x1011e5888, 0x140001a68c0}, 0x1400018e700)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140001397c0, {0x1011e5ce0, 0x1400011d4d0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:3102 +0x444
+2022/12/24 11:45:39 server.go:3230: http: panic serving 127.0.0.1:51252: runtime error: invalid memory address or nil pointer dereference
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1011903a0, 0x1013f4180})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x1400005b9c8?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x1011e3760, 0x140001a69a0}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:121 +0x30
+todo-app/app/controllers.top({0x1011e5888?, 0x140001a69a0}, 0x108a5cf3b?)
+	/Users/yy/Desktop/go-todo-app/app/controllers/router_main.go:10 +0x84
+net/http.HandlerFunc.ServeHTTP(0x1400005bad8?, {0x1011e5888?, 0x140001a69a0?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011e5888, 0x140001a69a0}, 0x1400018e800)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x140001f60c0?}, {0x1011e5888, 0x140001a69a0}, 0x1400018e800)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x14000139860, {0x1011e5ce0, 0x1400011d4d0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:3102 +0x444
+2022/12/24 11:46:50 server.go:3230: http: panic serving 127.0.0.1:51262: runtime error: invalid memory address or nil pointer dereference
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1011903a0, 0x1013f4180})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x1400005b9c8?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x1011e3760, 0x140001a6b60}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:121 +0x30
+todo-app/app/controllers.top({0x1011e5888?, 0x140001a6b60}, 0x108a5cf3b?)
+	/Users/yy/Desktop/go-todo-app/app/controllers/router_main.go:10 +0x84
+net/http.HandlerFunc.ServeHTTP(0x1400005bad8?, {0x1011e5888?, 0x140001a6b60?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011e5888, 0x140001a6b60}, 0x1400018e900)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x140001f6240?}, {0x1011e5888, 0x140001a6b60}, 0x1400018e900)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x14000139900, {0x1011e5ce0, 0x1400011d4d0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:3102 +0x444
+2022/12/24 11:47:05 server.go:3230: http: panic serving 127.0.0.1:51265: runtime error: invalid memory address or nil pointer dereference
+goroutine 40 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1011903a0, 0x1013f4180})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x1400005b9c8?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x1011e3760, 0x140001a6c40}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:121 +0x30
+todo-app/app/controllers.top({0x1011e5888?, 0x140001a6c40}, 0x108a5cf3b?)
+	/Users/yy/Desktop/go-todo-app/app/controllers/router_main.go:10 +0x84
+net/http.HandlerFunc.ServeHTTP(0x1400005bad8?, {0x1011e5888?, 0x140001a6c40?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011e5888, 0x140001a6c40}, 0x1400018ec00)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x140001f6540?}, {0x1011e5888, 0x140001a6c40}, 0x1400018ec00)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x14000139ae0, {0x1011e5ce0, 0x1400011d4d0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:3102 +0x444
+2022/12/24 11:47:06 server.go:3230: http: panic serving 127.0.0.1:51266: runtime error: invalid memory address or nil pointer dereference
+goroutine 42 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1011903a0, 0x1013f4180})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x1400005b9c8?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x1011e3760, 0x140001a6e00}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:121 +0x30
+todo-app/app/controllers.top({0x1011e5888?, 0x140001a6e00}, 0x108a5cf3b?)
+	/Users/yy/Desktop/go-todo-app/app/controllers/router_main.go:10 +0x84
+net/http.HandlerFunc.ServeHTTP(0x1400005bad8?, {0x1011e5888?, 0x140001a6e00?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011e5888, 0x140001a6e00}, 0x1400018ed00)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x140001f66c0?}, {0x1011e5888, 0x140001a6e00}, 0x1400018ed00)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x14000139b80, {0x1011e5ce0, 0x1400011d4d0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:3102 +0x444
+2022/12/24 11:47:11 server.go:3230: http: panic serving 127.0.0.1:51267: runtime error: invalid memory address or nil pointer dereference
+goroutine 44 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1011903a0, 0x1013f4180})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x1400005b9c8?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x1011e3760, 0x140001a6fc0}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:121 +0x30
+todo-app/app/controllers.top({0x1011e5888?, 0x140001a6fc0}, 0x108a5cf3b?)
+	/Users/yy/Desktop/go-todo-app/app/controllers/router_main.go:10 +0x84
+net/http.HandlerFunc.ServeHTTP(0x1400005bad8?, {0x1011e5888?, 0x140001a6fc0?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011e5888, 0x140001a6fc0}, 0x1400018ee00)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x140001f6840?}, {0x1011e5888, 0x140001a6fc0}, 0x1400018ee00)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x14000139c20, {0x1011e5ce0, 0x1400011d4d0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:3102 +0x444
+2022/12/24 11:47:16 server.go:3230: http: panic serving [::1]:51268: runtime error: invalid memory address or nil pointer dereference
+goroutine 46 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1011903a0, 0x1013f4180})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x1400005b9c8?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x1011e3760, 0x140001a7180}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:121 +0x30
+todo-app/app/controllers.top({0x1011e5888?, 0x140001a7180}, 0x108a5cf3b?)
+	/Users/yy/Desktop/go-todo-app/app/controllers/router_main.go:10 +0x84
+net/http.HandlerFunc.ServeHTTP(0x1400005bad8?, {0x1011e5888?, 0x140001a7180?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011e5888, 0x140001a7180}, 0x1400018ef00)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x140001f69c0?}, {0x1011e5888, 0x140001a7180}, 0x1400018ef00)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x14000139cc0, {0x1011e5ce0, 0x1400011d4d0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:3102 +0x444
+2022/12/24 11:47:17 server.go:3230: http: panic serving [::1]:51269: runtime error: invalid memory address or nil pointer dereference
+goroutine 48 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1011903a0, 0x1013f4180})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x1400005b9c8?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x1011e3760, 0x140001a7260}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:121 +0x30
+todo-app/app/controllers.top({0x1011e5888?, 0x140001a7260}, 0x108a5cf3b?)
+	/Users/yy/Desktop/go-todo-app/app/controllers/router_main.go:10 +0x84
+net/http.HandlerFunc.ServeHTTP(0x1400005bad8?, {0x1011e5888?, 0x140001a7260?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011e5888, 0x140001a7260}, 0x1400018f000)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x140001f6b40?}, {0x1011e5888, 0x140001a7260}, 0x1400018f000)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x14000139d60, {0x1011e5ce0, 0x1400011d4d0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:3102 +0x444
+2022/12/24 11:47:18 server.go:3230: http: panic serving [::1]:51270: runtime error: invalid memory address or nil pointer dereference
+goroutine 50 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1011903a0, 0x1013f4180})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x1400005b9c8?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x1011e3760, 0x140001a7340}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:121 +0x30
+todo-app/app/controllers.top({0x1011e5888?, 0x140001a7340}, 0x108a5cf3b?)
+	/Users/yy/Desktop/go-todo-app/app/controllers/router_main.go:10 +0x84
+net/http.HandlerFunc.ServeHTTP(0x1400005bad8?, {0x1011e5888?, 0x140001a7340?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011e5888, 0x140001a7340}, 0x1400018f100)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x140001f6cc0?}, {0x1011e5888, 0x140001a7340}, 0x1400018f100)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x14000139e00, {0x1011e5ce0, 0x1400011d4d0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:3102 +0x444
+2022/12/24 11:47:22 server.go:3230: http: panic serving 127.0.0.1:51271: runtime error: invalid memory address or nil pointer dereference
+goroutine 52 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1011903a0, 0x1013f4180})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x1400005b9c8?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x1011e3760, 0x140001a7420}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:121 +0x30
+todo-app/app/controllers.top({0x1011e5888?, 0x140001a7420}, 0x108a5cf3b?)
+	/Users/yy/Desktop/go-todo-app/app/controllers/router_main.go:10 +0x84
+net/http.HandlerFunc.ServeHTTP(0x1400005bad8?, {0x1011e5888?, 0x140001a7420?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011e5888, 0x140001a7420}, 0x1400018f200)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x140001f6e40?}, {0x1011e5888, 0x140001a7420}, 0x1400018f200)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x14000139ea0, {0x1011e5ce0, 0x1400011d4d0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:3102 +0x444
+2022/12/24 11:47:23 server.go:3230: http: panic serving 127.0.0.1:51272: runtime error: invalid memory address or nil pointer dereference
+goroutine 54 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1011903a0, 0x1013f4180})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x1400005b9c8?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x1011e3760, 0x140001a75e0}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:121 +0x30
+todo-app/app/controllers.top({0x1011e5888?, 0x140001a75e0}, 0x108a5cf3b?)
+	/Users/yy/Desktop/go-todo-app/app/controllers/router_main.go:10 +0x84
+net/http.HandlerFunc.ServeHTTP(0x1400005bad8?, {0x1011e5888?, 0x140001a75e0?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011e5888, 0x140001a75e0}, 0x1400018f300)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x140001f6fc0?}, {0x1011e5888, 0x140001a75e0}, 0x1400018f300)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x14000139f40, {0x1011e5ce0, 0x1400011d4d0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:3102 +0x444
+2022/12/24 11:47:36 server.go:3230: http: panic serving 127.0.0.1:51273: runtime error: invalid memory address or nil pointer dereference
+goroutine 56 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1011903a0, 0x1013f4180})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x140000579c8?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x1011e3760, 0x140000a00e0}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:121 +0x30
+todo-app/app/controllers.top({0x1011e5888?, 0x140000a00e0}, 0x108a5cf3b?)
+	/Users/yy/Desktop/go-todo-app/app/controllers/router_main.go:10 +0x84
+net/http.HandlerFunc.ServeHTTP(0x14000057ad8?, {0x1011e5888?, 0x140000a00e0?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011e5888, 0x140000a00e0}, 0x1400009c000)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x14000094030?}, {0x1011e5888, 0x140000a00e0}, 0x1400009c000)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140002da000, {0x1011e5ce0, 0x1400011d4d0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:3102 +0x444
+2022/12/24 11:49:16 server.go:3230: http: panic serving 127.0.0.1:51282: runtime error: invalid memory address or nil pointer dereference
+goroutine 67 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1011903a0, 0x1013f4180})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x140000579c8?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x1011e3760, 0x140000a02a0}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/html/template/template.go:121 +0x30
+todo-app/app/controllers.top({0x1011e5888?, 0x140000a02a0}, 0x108a5cf3b?)
+	/Users/yy/Desktop/go-todo-app/app/controllers/router_main.go:10 +0x84
+net/http.HandlerFunc.ServeHTTP(0x14000057ad8?, {0x1011e5888?, 0x140000a02a0?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011e5888, 0x140000a02a0}, 0x1400009c100)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x140000941e0?}, {0x1011e5888, 0x140000a02a0}, 0x1400009c100)
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140000d0000, {0x1011e5ce0, 0x1400011d4d0})
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.2/libexec/src/net/http/server.go:3102 +0x444
